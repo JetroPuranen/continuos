@@ -8,8 +8,8 @@ namespace continuos.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -28,6 +28,12 @@ namespace continuos.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet("Test", Name = "Test")]
+        public string Test()
+        {
+            return "What's uppp";
         }
     }
 }
