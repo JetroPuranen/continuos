@@ -2,7 +2,7 @@ name: CI-Workflow
 on:
   pull:
     branches:
-    - master
+    - development
 env:
   AZURE_WEBAPP_NAME: continuos20240110004222
   AZURE_WEBAPP_PACKAGE_PATH: continuos\publish
