@@ -1,6 +1,6 @@
 name: CI-Workflow
 on:
-  pull:
+  pull_request:
     branches:
     - development
 env:
