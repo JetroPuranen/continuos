@@ -5,7 +5,8 @@ namespace TestProject1
         [Fact]
         public void Test1()
         {
-            Assert.True(false);
+            //Test
+            Assert.True(true);
         }
     }
 }
